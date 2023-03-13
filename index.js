@@ -7,6 +7,7 @@ app.use(express.json())
 const dbConnection = require("./Database/db")
 const router = require("./routes/register")
 dbConnection()
+//all routes for REST
 
 app.use(require("./routes/login"))
 app.use(require("./routes/createpost"))
